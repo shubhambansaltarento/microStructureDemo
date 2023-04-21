@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CokreateLibModule, SharedModule } from 'projects/cokreate-lib/src/public-api';
+import { CokreateLibModule, SharedModule } from 'cokreate-lib';
+// import { CokreateLibModule, SharedModule } from 'projects/cokreate-lib/src/public-api';
 
 
 
