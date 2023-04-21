@@ -1,0 +1,25 @@
+<div class="sb-pageSection" *ngIf="section && section.contents && section.contents.length">
+    <!--Header-->
+    <div *ngIf="section.name" class="sb-pageSection-header">
+        <!--Section Title-->
+        <h4 class="sb-pageSection-title sb-pageSection-sentenceCase m-0 mr-8">{{section.name}}</h4>
+        <!--/Section Title-->
+        <!--Count-->
+        <span class="sb-pageSection-count sb-label sb-label-xs sb-label-error">{{section.count}}</span>
+        <!--/Count-->
+        <!--View all button-->
+        <button class="sb-btn sb-btn-xs sb-btn-secondary ml-auto" type="button"
+            *ngIf="section.contents.length >= 10 && section.name != 'My Trainings'" (click)="navigateToViewAll(section)"
+            appTelemetryInteract
+            [telemetryInteractEdata]="{id:'viewall-button' , type:'click' ,pageid:pageid , extra : {section: section.name}}">
+            {{ resourceService.frmelmnts.lnk.viewall}}
+        </button>
+        <!--/View all button-->
+    </div>
+    <!--/Header-->
+
+  
+    <!--Page Section Divider-->
+    <!--<hr class="sb-pageSection-footer" *ngIf="cardType !== 'batch'" />-->
+    <!--/Page Section Divider-->
+</div>
