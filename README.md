@@ -8,12 +8,15 @@ clone repo
 
 run ``npm install``
 now to build library run ``ng build --project=cokreat-lib --watch``
-to run sourcing portal in another terminal run `` npm run start:sourcing``
+to run sourcing portal in another terminal run `` npm run start:sourcing`` run ``npm run start:contribute`` in another terminal to run contribute project
+
+
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Navigate to for sourcing `http://localhost:4201/`. The application will automatically reload if you change any of the source files.
 
+Navigate to for contribute `http://localhost:4202/`. The application will automatically reload if you change any of the source files.
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
