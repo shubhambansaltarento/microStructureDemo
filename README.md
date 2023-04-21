@@ -5,7 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## How to start project
 
 clone repo 
-run npm install
+
+run ``npm install``
 now to build library run ``ng build --project=cokreat-lib --watch``
 to run sourcing portal in another terminal run `` npm run start:sourcing``
 
